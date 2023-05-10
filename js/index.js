@@ -1,3 +1,2 @@
 //Comentario
 
-alert("Hola mundo")

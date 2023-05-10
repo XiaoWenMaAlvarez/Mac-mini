@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0.1px;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* Variables */
+:root {
+  /* Color */
+  --text-color: #FFF;
+  --text-color-alt: #A1A1A6;
+  --accent-color: #0071E3;
+  --accent-color-alt: #2997FF;
+  --body-bg: #000;
+}
+
+body {
+  color: var(--text-color);
+  font-family: (--body-font);
+  background-color: var(--body-bg);
+  overflow-x: hidden;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
