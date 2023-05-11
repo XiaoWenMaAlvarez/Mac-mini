@@ -44,7 +44,7 @@
   --display-font: 'SF Pro Display', sans-serif;
 
   /* Body size */
-  --small-body-size: 0.75rem;      /* 12px */
+  --small-body-size: 0.85rem;      /* 13.5px */
   --normal-body-size: 1rem;        /* 16px */
   --big-body-size: 1.25rem;       /* 20px */
   --bigger-body-size: 1.5rem;     /* 24px */
@@ -58,7 +58,7 @@
   /* Weight */
   --normal-font: 400;
   --medium-font: 500;
-  --semi-bold-font: 600;
+  --semibold-font: 600;
   --bold-font: 700;
 
   /* Line height */

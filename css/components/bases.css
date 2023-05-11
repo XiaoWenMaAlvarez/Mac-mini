@@ -20,6 +20,17 @@ ul, ol {
   --accent-color: #0071E3;
   --accent-color-alt: #2997FF;
   --body-bg: #000;
+  --bg-color: #151516;
+  --bg-color-alt: #1D1D1F;
+
+  /* Stacking context */
+  --z-negative: -1;
+  --z-normal: 1;
+  --z-sticky: 50;
+
+  /* Utils */
+  --header-height: 3rem;
+
 }
 
 body {
