@@ -16,7 +16,7 @@
 
 .main-header .title {
   font-family: var(--display-font);
-  font-size: var(--big-body-size);
+  font-size: var(--normal-body-size);
   color: var(--text-color);
   font-weight: var(--semibold-font);
   text-decoration: none;
@@ -30,7 +30,7 @@
   color: var(--accent-color-alt);
   text-decoration: none;
 }
-
+/* Estilo para móviles */
 @media screen and (max-width: 734px) {
   .main-header .nav {
     max-width: calc(100% - 2rem);
@@ -39,6 +39,10 @@
 
   .main-header .right {
     gap: 0.75rem;
+  }
+
+  .main-header .button {
+    font-size: var(--small-body-size);
   }
 
   .main-menu {
@@ -99,4 +103,23 @@
   .main-header.is-active .menu-button {
     background-image: url("/icons/expand_less.svg");
   }
+}
+
+/* Estilo para tabletas */
+@media screen and (min-width: 734px) {
+
+  .main-header {
+    border-bottom: var(--header-border);
+  }
+
+  .main-header .right {
+    font-size: var(--smaller-body-size);
+    gap: 0.5rem;
+  }
+
+  .main-menu {
+    display: flex;
+    gap: 1.5rem;
+  }
+
 }

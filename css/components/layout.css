@@ -3,3 +3,26 @@
   justify-content: center;
   align-items: center;
 }
+
+.container {
+  margin-inline: auto;
+  width: 87.5%;
+  max-width: 22.5rem;
+}
+
+@media screen and (min-width: 734px) {
+
+  .container {
+    width: 100%;
+    max-width: 43.25rem;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+  .container {
+    max-width: 61.25rem;
+  }
+  
+}

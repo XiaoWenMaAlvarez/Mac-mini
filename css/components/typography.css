@@ -68,6 +68,7 @@
 @media screen and (min-width: 734px) {
   :root {
     /* Body font size */
+    --smaller-body-size: 0.75rem;   /* 12px */
     --big-body-size: 1.5rem;         /* 24px */
     --bigger-body-size: 1.75rem;     /* 28px */
 
