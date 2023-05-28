@@ -16,9 +16,9 @@
 
 .main-header .title {
   font-family: var(--display-font);
-  font-size: var(--normal-body-size);
   color: var(--text-color);
   font-weight: var(--semibold-font);
+  font-size: var(--normal-body-size);
   text-decoration: none;
 }
 
