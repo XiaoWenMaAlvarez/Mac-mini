@@ -4,6 +4,7 @@
   color: var(--text-color);
   background-color: var(--accent-color);
   border-radius: 100px;
+  transition: background-color 150ms;
 }
 
 .button:hover {
@@ -13,5 +14,6 @@
 
 .button.tiny {
   padding: 0.25rem 0.7rem;
+  font-size: var(--smaller-body-size);
 }
 
