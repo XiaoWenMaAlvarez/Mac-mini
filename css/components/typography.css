@@ -97,7 +97,7 @@
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--display-font);
-  font-weight: var(--semi-bold-font);
+  font-weight: var(--semibold-font);
 }
 
 .display-font {

@@ -60,3 +60,15 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+a.arrow {
+  display: inline-block;
+}
+
+a.arrow::after {
+  content: "\e900";
+  display: inline;
+  padding-left: 0.25rem;
+  font-size: 0.75rem;
+  font-family: "icomoon" !important;
+}

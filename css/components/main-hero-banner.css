@@ -1,0 +1,84 @@
+/* Hero image */
+.hero-image {
+  position: relative;
+  width: 46rem;
+  height: 27rem;
+}
+
+.hero-image .picture {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Contenido del banner */
+
+.main-hero-banner {
+  text-align: center;
+}
+
+.main-hero-banner .container {
+  position: relative;
+  margin-top: -5.5rem;
+  font-family: var(--display-font);
+  color: var(--text-color-alt);
+  font-size: var(--bigger-body-size);
+  font-weight: var(--medium-font);
+  letter-spacing: 0.0005em;
+  line-height: 1.25;
+}
+
+.main-hero-banner .product-title {
+  font-size: var(--bigger-body-size);
+  margin-bottom: 0.5rem;
+}
+
+.main-hero-banner .hero-title {
+  margin-bottom: 0.75rem;
+  font-size: 3rem;
+  line-height: 1.05;
+  letter-spacing: -0.015em;
+  font-weight: var(--bold-font);
+
+  /* Degradado del texto */
+  background-image: radial-gradient(#eff1ff, #000 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-position: 50% 75%;
+  background-size: 150% 200%;
+  
+}
+
+.main-hero-banner .description {
+  margin-bottom: 2.5rem;
+}
+
+.main-hero-banner .subtitle,
+.main-hero-banner .hero-cta {
+  font-size: 1.25rem;
+}
+
+.main-hero-banner .subtitle {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.main-hero-banner .subtitle .chip {
+  --size: 4rem;
+  width: var(--size);
+  height: var(--size);
+}
+
+.main-hero-banner .hero-cta-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-hero-banner .hero-cta {
+  color: var(--text-color);
+  font-weight: var(--normal-font);
+  padding: 0.5rem 0;
+}
