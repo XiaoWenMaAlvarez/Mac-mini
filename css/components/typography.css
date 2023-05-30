@@ -107,3 +107,24 @@ h1, h2, h3, h4, h5, h6 {
 .body-font {
   font-family: var(--body-font);
 }
+
+.big-title {
+  font-size: var(--big-title-size);
+  font-weight: var(--bold-font);
+  letter-spacing: -0.015em;
+  margin-bottom: 0.75em;
+}
+
+.big-description {
+  max-width: var(--large-max-width);
+  color: var(--text-color-alt);
+  font-size: var(--big-body-size);
+  font-weight: var(--medium-font);
+  line-height: var(--title-line-height);
+}
+
+@media screen and (min-width:1024px) {
+  .big-description {
+    max-width: var(--small-max-width);
+  }
+}

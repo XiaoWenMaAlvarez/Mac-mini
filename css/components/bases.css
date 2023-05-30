@@ -31,7 +31,9 @@ ul, ol {
 
   /* Utils */
   --header-height: 3.3rem;
-
+  --large-max-width: 91%;
+  --medium-max-width: 83%;
+  --small-max-width: 75%;
 }
 
 html {
@@ -45,6 +47,12 @@ body {
   font-family: var(--body-font);
   background-color: var(--body-bg);
   overflow-x: hidden;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
 }
 
 button {
