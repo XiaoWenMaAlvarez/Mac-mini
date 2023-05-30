@@ -119,7 +119,6 @@
 
   .main-hero-banner .hero-cta {
     padding: 0;
-    margin-bottom: 10rem;
   }
 
   .main-hero-banner .hero-cta:first-of-type::after {
@@ -152,4 +151,61 @@
     max-width: 55rem;
     margin-inline: auto;
   }
+}
+
+/* Animación */
+
+/* Pantalla encendiéndose */
+@keyframes turn-on-hero-images {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.hero-image .picture.dark {
+  animation: turn-on-hero-images 0.8s ease-in-out 0.1s forwards;
+}
+
+/* Contenido del banner */
+
+@keyframes fade-in-hero {
+  to {
+    opacity: 1;
+    transform: initial;
+  }
+}
+
+.main-hero-banner .product-title,
+.main-hero-banner .hero-title, 
+.main-hero-banner .description,
+.main-hero-banner .subtitle,
+.main-hero-banner .hero-cta-container {
+  opacity: 0;
+  transform: translateY(4rem);
+  animation: fade-in-hero 0.5s ease-in-out forwards;
+}
+
+/* Delay personalizado */
+.main-hero-banner .product-title {
+  animation-delay: 0.5s;
+}
+
+.main-hero-banner .hero-title {
+  animation-delay: 0.7s;
+}
+
+.main-hero-banner .description {
+  animation-delay: 0.9s;
+}
+
+.main-hero-banner .subtitle {
+  animation-delay: 1.1s;
+}
+
+.main-hero-banner .hero-cta-container {
+  animation-delay: 1.3s;
 }
