@@ -3,6 +3,7 @@
   --max-width: 25rem;
   border-radius: 1.25rem;
   position: relative;
+  max-width: calc(100vw - 3rem);
 }
 
 @media screen and (max-width: 350px) {
@@ -116,6 +117,10 @@
   color: #C48CFC;
 }
 
+.feature-panel.cpu .subtitle {
+  font-size: 35px;
+}
+
 
 /* GPU */
 .feature-panel.gpu .video {
@@ -197,5 +202,55 @@
 
   .feature-panel.gpu .subtitle {
     font-size: var(--bigger-title-size);
+  }
+}
+
+/* Aprendizaje continuo */
+.feature-panel.learning {
+  background-image: linear-gradient(-135deg, #590A0D 0%, #10071C 100%);
+}
+
+.feature-panel.learning .description {
+  font-size: var(--big-body-size);
+  line-height: 1.2;
+}
+
+.feature-panel.learning .characteristics-container {
+  font-weight: var(--medium-font);
+}
+
+.feature-panel .description .accent {
+  color: var(--text-color-alt);
+}
+
+@media screen and (min-width: 734px) {
+
+  .feature-panel.learning .characteristics-container {
+    grid-template-columns: repeat(auto-fill, minmax(9.25rem,1fr));
+    gap: 1rem;
+    align-items: end;
+  }
+
+  .feature-panel.learning .number {
+    --size: 5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  .feature-panel .break-line-desktop {
+    display: none;
+  }
+
+  .feature-panel.learning .content {
+    max-width: 35rem;
+  }
+
+  .feature-panel .characteristics-container {
+    grid-template-columns: repeat(auto-fill, minmax(12.5rem,1fr));
+  }
+
+  .feature-panel.learning .characteristic {
+    font-size: 1rem;
   }
 }
