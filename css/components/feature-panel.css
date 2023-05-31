@@ -2,9 +2,10 @@
   --padding: 2rem;
   --max-width: 25rem;
   border-radius: 1.25rem;
+  position: relative;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 350px) {
   .feature-panel {
     border-radius: 0;
   }
@@ -43,15 +44,6 @@
   margin-left: auto;
   --width: 90%;
   width: var(--width);
-}
-
-/* CPU */
-.feature-panel.cpu {
-  background-image: linear-gradient(-135deg, #C6368A 0%, #673DC2 100%);
-}
-
-.feature-panel.cpu .subtitle .accent {
-  color: #C48CFC;
 }
 
 @media screen and (min-width: 734px) {
@@ -112,5 +104,98 @@
   .feature-panel .image {
     --width: 45rem;
     --spacing: 0rem;
+  }
+}
+
+/* CPU */
+.feature-panel.cpu {
+  background-image: linear-gradient(-135deg, #C6368A 0%, #673DC2 100%);
+}
+
+.feature-panel.cpu .subtitle .accent {
+  color: #C48CFC;
+}
+
+
+/* GPU */
+.feature-panel.gpu .video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: var(--z-negative);
+}
+
+.feature-panel .characteristics-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
+  gap: 3rem;
+  margin-bottom: 4rem;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.feature-panel .characteristic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature-panel .number {
+  --size: 5rem;
+  font-size: var(--size);
+  font-family: var(--display-font);
+  font-weight: var(--bold-font);
+  line-height: 1;
+}
+
+.feature-panel .number .x {
+  font-size: calc(var(--size) - 2rem);
+}
+
+.feature-panel .caption {
+  font-weight: var(--bold-font);
+}
+
+@media screen and (min-width: 734px) {
+
+  .feature-panel.gpu .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .feature-panel.gpu .content {
+    max-width: initial;
+  }
+
+  .feature-panel.gpu .subtitle {
+    font-size: 3rem;
+  }
+
+  .feature-panel.gpu .characteristics-container {
+    gap: 0;
+    padding-top: 3rem;
+  }
+
+  .feature-panel .number {
+    --size: 6rem;
+  }
+}
+
+@media screen and (min-width: 1024px)  {
+  
+  .feature-panel .characteristics-container {
+    align-items: center;
+    padding-inline: 2rem;
+  }
+
+  .feature-panel .number {
+    --size: 9rem;
+  }
+
+  .feature-panel.gpu .subtitle {
+    font-size: var(--bigger-title-size);
   }
 }
