@@ -10,6 +10,14 @@
   max-width: 22.5rem;
 }
 
+.grid-section {
+  display: grid;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 25rem;
+  margin-inline: auto;
+}
+
 .center-x {
   left: 50%;
   transform: translateX(-50%);
@@ -20,6 +28,11 @@
   .container {
     width: 100%;
     max-width: 43.25rem;
+  }
+
+  .grid-section {
+    width: calc(100% - 3rem);
+    max-width: 87.5rem;
   }
 
 }

@@ -17,3 +17,8 @@
   font-size: var(--smaller-body-size);
 }
 
+.button.ghost {
+  border: 2px solid #FFF;
+  background: none;
+  font-weight: var(--semibold-font);
+}

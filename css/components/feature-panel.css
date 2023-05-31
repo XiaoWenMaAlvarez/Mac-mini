@@ -1,0 +1,116 @@
+.feature-panel {
+  --padding: 2rem;
+  --max-width: 25rem;
+  border-radius: 1.25rem;
+}
+
+@media screen and (max-width: 360px) {
+  .feature-panel {
+    border-radius: 0;
+  }
+}
+
+.feature-panel .content {
+  padding: var(--padding);
+}
+
+.feature-panel .title {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.feature-panel .subtitle {
+  font-weight: var(--bold-font);
+  font-size: var(--bigger-title-size);
+  margin-bottom: 1.25rem;
+}
+
+.feature-panel .description {
+  font-family: var(--display-font);
+  font-weight: var(--semibold-font);
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.4rem;
+  letter-spacing: 0.012em;
+}
+
+.feature-panel .button {
+  padding: 0.75rem 1.25rem;
+}
+
+.feature-panel .image {
+  display: block;
+  margin-left: auto;
+  --width: 90%;
+  width: var(--width);
+}
+
+/* CPU */
+.feature-panel.cpu {
+  background-image: linear-gradient(-135deg, #C6368A 0%, #673DC2 100%);
+}
+
+.feature-panel.cpu .subtitle .accent {
+  color: #C48CFC;
+}
+
+@media screen and (min-width: 734px) {
+  .feature-panel .break-line {
+    display: none;
+  }
+
+  .feature-panel {
+    position: relative;
+    --padding: 2.5rem;
+    overflow: hidden;
+  }
+
+  .feature-panel .content {
+    box-sizing: content-box;
+    max-width: var(--max-width);
+    padding-right: 0;
+  }
+
+  .feature-panel .title {
+    margin-bottom: 5rem;
+  }
+
+  .feature-panel .subtitle {
+    margin-bottom: 1.5rem;
+  }
+
+  .feature-panel .description {
+    margin-bottom: 3.5rem;
+  }
+
+  .feature-panel .button {
+    white-space: nowrap;
+  }
+
+  .feature-panel .image {
+    --width: 32rem;
+    --spacing: 1rem;
+    position: absolute;
+    bottom: 0;
+    left: calc(var(--width) + var(--spacing));
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .feature-panel {
+    --max-width: 31.25rem;
+  }
+
+  .feature-panel .title {
+    margin-bottom: 5.5rem;
+  }
+
+  .feature-panel .description {
+    margin-bottom: 4.5rem;
+  }
+
+  .feature-panel .image {
+    --width: 45rem;
+    --spacing: 0rem;
+  }
+}
