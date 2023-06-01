@@ -4,6 +4,7 @@
   border-radius: 1.25rem;
   position: relative;
   max-width: calc(100vw - 3rem);
+  overflow: hidden;
 }
 
 @media screen and (max-width: 350px) {
@@ -254,3 +255,26 @@
     font-size: 1rem;
   }
 }
+
+/* Big Sur */
+
+.feature-panel .background-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: var(--z-negative);
+}
+
+.feature-panel .background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.feature-panel.big-sur .subtitle {
+  font-size: var(--normal-title-size);
+  line-height: 1.05;
+}
+
