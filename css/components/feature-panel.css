@@ -297,6 +297,7 @@
 .feature-panel.speed .second-line,
 .feature-panel.speed .background-container {
   opacity: 0.15;
+  transition: opacity 500ms;
 }
 
 .feature-panel.speed.is-active .second-line,
