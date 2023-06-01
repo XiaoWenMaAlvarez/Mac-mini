@@ -278,3 +278,28 @@
   line-height: 1.05;
 }
 
+/* Velocidad y capacidad de respuesta */
+
+.feature-panel.speed .description {
+  margin-bottom: 3rem;
+}
+
+.feature-panel.speed .subtitle {
+  text-align: center;
+  line-height: 1;
+}
+
+.feature-panel.speed .first-line {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+}
+
+.feature-panel.speed .second-line,
+.feature-panel.speed .background-container {
+  opacity: 0.15;
+}
+
+.feature-panel.speed.is-active .second-line,
+.feature-panel.speed.is-active .background-container {
+  opacity: initial;
+}
