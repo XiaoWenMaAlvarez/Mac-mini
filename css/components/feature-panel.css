@@ -484,3 +484,34 @@
   }
 }
 
+/* Almacenamiento  SSD */
+.feature-panel.ssd {
+  background-image: linear-gradient(-135deg, #A137BC 0%, #D83C48 100%);
+}
+
+.feature-panel.ssd .description {
+  margin-bottom: 1rem;
+}
+
+.feature-panel.ssd .image-container {
+  width: 32rem;
+  height: 27rem;
+}
+
+.feature-panel.ssd .image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .feature-panel.ssd {
+    grid-column-start: span 3;
+  }
+
+  .feature-panel.ssd .image-container {
+    width: 44rem;
+    height: 38rem;
+  }
+}
