@@ -480,7 +480,7 @@
 @media screen and (min-width: 1024px) {
   .feature-panel.memory {
     grid-column-start: 5;
-    grid-column-end: 8;
+    grid-column-end: 7;
   }
 }
 
@@ -514,4 +514,44 @@
     width: 44rem;
     height: 38rem;
   }
+}
+
+/* Seguridad */
+.feature-panel.security {
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.feature-panel.security .message {
+  margin-bottom: 2rem;
+  font-size: var(--big-title-size);
+  color: var(--text-color-alt);
+  text-align: center;
+  white-space: nowrap;
+}
+
+.feature-panel.security .padlock {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  width: 6.25rem;
+  height: 8rem;
+  background-image: url("/media/img/padlock-sprite.png");
+  background-size: 800px 1152px;
+  background-repeat: no-repeat;
+}
+
+.feature-panel.security .button {
+  margin: 0 auto;
+  margin-bottom: var(--padding);
+}
+
+@media screen and (min-width: 1024px) {
+
+  .feature-panel.security {
+    grid-column-start: 4;
+    grid-column-end: 7;
+  }
+
 }
