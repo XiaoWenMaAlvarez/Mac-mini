@@ -294,6 +294,12 @@
   margin-bottom: 0.75rem;
 }
 
+@media screen and (min-width: 734px) {
+  .feature-panel.speed .subtitle {
+    font-size: var(--small-title-size);
+  }
+}
+
 .feature-panel.speed .second-line,
 .feature-panel.speed .background-container {
   opacity: 0.15;
@@ -303,4 +309,35 @@
 .feature-panel.speed.is-active .second-line,
 .feature-panel.speed.is-active .background-container {
   opacity: initial;
+}
+
+/* Subgrid de características */
+.sub-grid {
+  --gap: 1.5rem;
+  display: grid;
+  gap: var(--gap);
+}
+
+.sub-grid .feature-panel .title {
+  margin-bottom: 1.25rem;
+}
+
+.sub-grid .feature-panel .content {
+  padding-right: var(--padding);
+}
+
+@media screen and (min-width: 734px) {
+  .sub-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .sub-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .feature-panel.feature-panel.speed {
+    grid-column-start: span 3;
+  }
 }
