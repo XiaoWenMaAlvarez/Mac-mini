@@ -540,6 +540,13 @@
   background-image: url("/media/img/padlock-sprite.png");
   background-size: 800px 1152px;
   background-repeat: no-repeat;
+
+  /* Animación */
+  animation: unlock-animation 0s steps(1) forwards;
+  animation-play-state: paused;
+  animation-iteration-count: initial;
+  animation-duration: 72s;
+  background-position: 0 0;
 }
 
 .feature-panel.security .button {
