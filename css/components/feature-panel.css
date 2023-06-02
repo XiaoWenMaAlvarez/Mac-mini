@@ -340,4 +340,25 @@
   .feature-panel.feature-panel.speed {
     grid-column-start: span 3;
   }
+
+  .feature-panel.speed .subtitle {
+    font-size: var(--bigger-title-size);
+  }
+}
+
+/* Apps */
+.feature-panel.apps .description {
+  margin-bottom: 2rem;
+}
+
+.feature-panel.apps .apps-image {
+  width: 90%;
+  display: block;
+  margin-inline: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .feature-panel.feature-panel.apps {
+    grid-column-start: span 3;
+  }
 }
