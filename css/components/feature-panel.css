@@ -437,3 +437,49 @@
   }
 }
 
+
+/* Memoria unificada */
+.feature-panel.memory .title,
+.feature-panel.memory .description {
+  margin-bottom: 0;
+}
+
+.feature-panel.memory .icon {
+  width: auto;
+  margin-bottom: 1.25rem;
+}
+
+.feature-panel.memory .description {
+  font-size: var(--big-body-size);
+  line-height: var(--title-line-height);
+}
+
+.feature-panel.memory .wrapper {
+  padding: 9rem 0;
+}
+
+@media screen and (min-width: 734px) {
+
+  .feature-panel.memory {
+    display: flex;
+  }
+
+  .feature-panel.memory .content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .feature-panel.memory .wrapper {
+    padding: 0;
+    margin: auto 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .feature-panel.memory {
+    grid-column-start: 5;
+    grid-column-end: 8;
+  }
+}
+
