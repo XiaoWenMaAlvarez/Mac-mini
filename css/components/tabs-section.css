@@ -106,3 +106,23 @@
     margin-top: -21rem;
   }
 }
+
+/* Animación */
+
+.tabs-section .image-panel,
+.tabs-section .panel {
+  transition: opacity 750ms;
+}
+
+.tabs-section .image-panel:not(.is-active),
+.tabs-section .panel:not(.is-active) {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tabs-section .image-panel.is-active,
+.tabs-section .panel.is-active {
+  position: relative;
+  z-index: var(--z-normal);
+}
