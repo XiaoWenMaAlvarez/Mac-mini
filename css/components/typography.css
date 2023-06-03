@@ -115,6 +115,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.75em;
 }
 
+.big-title .accent {
+  color: var(--text-color-alt);
+}
+
 .big-description {
   max-width: var(--large-max-width);
   color: var(--text-color-alt);
