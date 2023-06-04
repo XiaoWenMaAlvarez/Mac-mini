@@ -699,3 +699,31 @@
     width: 27.5rem;
   }
 }
+
+/* macBig Sur*/
+
+.feature-panel.mac-os {
+  text-align: center;
+  min-height: 31rem;
+  flex-direction: column;
+}
+
+.feature-panel.mac-os .icon {
+  height: 1.25rem;
+  width: auto;
+  margin-bottom: 0.75rem;
+}
+
+.feature-panel.mac-os .link {
+  color: inherit;
+}
+
+@media screen and (min-width: 1024px) {
+  .feature-panel.mac-os {
+    min-height: 38rem;
+  }
+
+  .feature-panel.mac-os .icon {
+    height: 1.75rem;
+  }
+}
