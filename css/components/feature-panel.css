@@ -727,3 +727,40 @@
     height: 1.75rem;
   }
 }
+
+/* Accesorios y Continuidad */
+.feature-panel.accessories {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bg-color-alt);
+}
+
+.feature-panel.accessories .image-container {
+  margin-top: auto;
+}
+
+.feature-panel.accessories .image-accessories {
+  display: block;
+}
+
+.feature-panel.accessories .normal-text {
+  margin-bottom: 1rem;
+}
+
+.feature-panel.accessories {
+  margin-bottom: 1.25rem;
+}
+
+@media screen and (min-width: 734px) {
+  .feature-panel.accessories .subtitle {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .feature-panel.accessories {
+    grid-column: span 3;
+  }
+}
