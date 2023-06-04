@@ -18,7 +18,7 @@
   font-family: var(--display-font);
   color: var(--text-color);
   font-weight: var(--semibold-font);
-  font-size: var(--normal-body-size);
+  font-size: var(--big-body-size);
   text-decoration: none;
 }
 

@@ -109,7 +109,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .big-title {
-  font-size: var(--big-title-size);
+  font-size: var(--bigger-title-size);
   font-weight: var(--bold-font);
   letter-spacing: -0.015em;
   margin-bottom: 0.75em;

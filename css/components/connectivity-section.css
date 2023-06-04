@@ -1,0 +1,24 @@
+.connectivity-section .image-container {
+  width: 100%;
+}
+
+.connectivity-section .image {
+  max-width: initial;
+  width: 160%;
+  position: relative;
+  left: -30%;
+  z-index: var(--z-negative);
+}
+
+@media screen and (min-width: 734px) {
+  .connectivity-section .image {
+    margin-top: -5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .connectivity-section .image {
+    margin-top: -10rem;
+  }
+}
+
