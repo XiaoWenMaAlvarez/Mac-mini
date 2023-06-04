@@ -764,3 +764,46 @@
     grid-column: span 3;
   }
 }
+
+/* Trade-in */
+
+.feature-panel.trade-in {
+  text-align: center;
+  background-color: var(--bg-color-alt);
+}
+
+.feature-panel.trade-in .image-container {
+  width: 10rem;
+  display: block;
+  margin-inline: auto;
+}
+
+@media screen and (min-width: 734px) {
+  .feature-panel.trade-in .content {
+    max-width: initial;
+    padding-right: var(--padding);
+  }
+
+  .feature-panel.trade-in .subtitle {
+    font-size: 2.5rem;
+  }
+
+  .feature-panel.trade-in .title {
+    margin-bottom: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .feature-panel.trade-in .content {
+    max-width: 47.5rem;
+    margin-inline: auto;
+  }
+
+  .feature-panel.trade-in .link {
+    margin-bottom: 3rem;
+  }
+
+  .feature-panel.trade-in .image-container {
+    width: 14.5rem;
+  }
+}
