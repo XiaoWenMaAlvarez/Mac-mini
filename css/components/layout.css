@@ -45,3 +45,14 @@
   }
   
 }
+
+.last-grid-section {
+  background-color: var(--bg-color);
+  margin: 0;
+  max-width: initial;
+  width: 100%;
+  padding-inline: 5%;
+  padding-block: 2%;
+  position: relative;
+  z-index: var(--z-normal);
+}

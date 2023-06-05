@@ -807,3 +807,26 @@
     width: 14.5rem;
   }
 }
+
+/* Educación y Empresas*/
+
+.feature-panel.hero-panel {
+  text-align: center;
+  min-height: 31rem;
+}
+
+.feature-panel.hero-panel .link:first-of-type {
+  margin-bottom: 2.25rem;
+}
+
+@media screen and (min-width: 734px) {
+  .feature-panel.hero-panel .subtitle {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .feature-panel.hero-panel {
+    grid-column: span 3;
+  }
+}
